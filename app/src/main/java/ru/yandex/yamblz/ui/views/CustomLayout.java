@@ -2,12 +2,10 @@ package ru.yandex.yamblz.ui.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.Gravity;
+
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
+
 
 /**
  * Created by grin3s on 28.07.16.
@@ -130,10 +128,6 @@ public class CustomLayout extends ViewGroup {
         }
     }
 
-    // ----------------------------------------------------------------------
-    // The rest of the implementation is for custom per-child layout parameters.
-    // If you do not need these (for example you are writing a layout manager
-    // that does fixed positioning of its children), you can drop all of this.
 
     @Override
     public LayoutParams generateLayoutParams(AttributeSet attrs) {
@@ -159,27 +153,11 @@ public class CustomLayout extends ViewGroup {
      * Custom per-child layout information.
      */
     public static class LayoutParams extends MarginLayoutParams {
-        /**
-         * The gravity to apply with the View to which these layout parameters
-         * are associated.
-         */
-//        public int gravity = Gravity.TOP | Gravity.START;
-//
-//        public static int POSITION_MIDDLE = 0;
-//        public static int POSITION_LEFT = 1;
-//        public static int POSITION_RIGHT = 2;
-//
-//        public int position = POSITION_MIDDLE;
+
 
         public LayoutParams(Context c, AttributeSet attrs) {
             super(c, attrs);
-            // Pull the layout param values from the layout XML during
-            // inflation.  This is not needed if you don't care about
-            // changing the layout behavior in XML.
-//            TypedArray a = c.obtainStyledAttributes(attrs, R.styleable.CustomLayoutLP);
-//            gravity = a.getInt(R.styleable.CustomLayoutLP_android_layout_gravity, gravity);
-//            position = a.getInt(R.styleable.CustomLayoutLP_layout_position, position);
-//            a.recycle();
+
         }
 
         public LayoutParams(int width, int height) {
