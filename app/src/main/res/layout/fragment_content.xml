@@ -3,12 +3,61 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent">
 
-    <TextView
+    <ru.yandex.yamblz.ui.views.CustomLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/content"
-        android:textSize="42sp"
-        android:gravity="center"
-        />
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+
+            android:text="C"
+            android:textSize="42sp"
+            android:gravity="center"
+            android:id="@+id/textView3"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="A"
+                android:textSize="42sp"
+                android:gravity="center"
+                android:id="@+id/textView1"
+                android:background="@color/red"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:text="B"
+                android:textSize="42sp"
+                android:gravity="center"
+                android:id="@+id/textView2"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+
+            android:text="D"
+            android:textSize="42sp"
+            android:gravity="center"
+            android:id="@+id/textView4"
+            android:background="@color/red" />
+
+
+
+    </ru.yandex.yamblz.ui.views.CustomLayout>
+
+
 
 </FrameLayout>
